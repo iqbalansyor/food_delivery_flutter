@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/utils/dimension.dart';
 
 class SmallText extends StatelessWidget {
   final String text;
@@ -19,7 +20,7 @@ class SmallText extends StatelessWidget {
       text,
       style: TextStyle(
           fontFamily: 'Roboto',
-          fontSize: size,
+          fontSize: Dimension.getSize(size),
           fontWeight: FontWeight.w400,
           color: color
       ),
